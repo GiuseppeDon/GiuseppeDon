@@ -9,5 +9,3 @@ asdasd asd
 #primo snapshot
 
 dsadsa
-
-#FILIPPO LA SBORRA MAGGIORE
