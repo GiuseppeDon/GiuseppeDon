@@ -6,15 +6,10 @@
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 	  <link rel="stylesheet" href="main.css">
-	 <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	  <title>Progetto semi-fiero</title>
+	  <title>Progetto</title>
 	</head>
 
     <body id="home" class="scrollspy">
@@ -23,9 +18,9 @@
 			<nav class="teal">
 				<div class="container">
 					<div class="nav-wrapped">
-						<a href="#" class="brand-logo">Progetto</a>
+						<a href="#" class="brand-logo">Progetto fiero</a>
 						<a href="#" data-target="mobile-nav" class="sidenav-trigger">
-							<i class="material-icons">manu</i>
+							<i class="material-icons">menu</i>
 						</a>
 						<ul class="right hide-on-med-and-down">
 							<li>
@@ -35,17 +30,14 @@
 								<a href="#search" class="">Search</a>
 							</li>
 							<li>
-								<a href="#popular" class="">Popular places</a>
-							</li>
-							<li>
-								<a href="#gallery" class="">Gallery</a>
+								<a href="#popular" class="">Cose belle</a>
 							</li>
 						</ul>
 					</div>
 				</div>
 			</nav>
 		</div>
-		<ul class="right hide-on-med-and-down">
+		<ul class="sidenav" id="mobile-nav">
 			<li>
 				<a href="#home" class="">Home</a>
 			</li>
@@ -53,10 +45,7 @@
 				<a href="#search" class="">Search</a>
 			</li>
 			<li>
-				<a href="#popular" class="">Popular places</a>
-			</li>
-			<li>
-				<a href="#gallery" class="">Gallery</a>
+				<a href="#popular" class="">Cose belle</a>
 			</li>
 		</ul>
 	</section>
@@ -64,28 +53,28 @@
 		<section class="slider">
 				<ul class="slides">
 				  <li>
-					<img src="Immagini/pexels-david-bartus-628997.jpg"> <!-- random image -->
+					<img src="Immagini/pexels-david-bartus-628997.jpg" id="immagine"> <!-- random image -->
 					<div class="caption center-align">
 					  <h3>Bau bau</h3>
 					  <h5 class="light grey-text text-lighten-3">Ecco un cane ad otto zampe</h5>
 					</div>
 				  </li>
 				  <li>
-					<img src="Immagini/pexels-michael-willinger-3482977.jpg"> <!-- random image -->
+					<img src="Immagini/Codice-HTML.png" id="immagine"> <!-- random image -->
 					<div class="caption left-align">
 					  <h3>Sembra un gatto</h3>
 					  <h5 class="light grey-text text-lighten-3">Lo pensi anche tu??</h5>
 					</div>
 				  </li>
 				  <li>
-					<img src="Immagini/pexels-michael-willinger-3483015.jpg"> <!-- random image -->
+					<img src="Immagini/pexels-michael-willinger-3483015.jpg" id="immagine"> <!-- random image -->
 					<div class="caption right-align">
 					  <h3>Non so, castoro?</h3>
 					  <h5 class="light grey-text text-lighten-3">Si, effettivamente è un castoro</h5>
 					</div>
 				  </li>
 				  <li>
-					<img src="Immagini/obama.jfif"> <!-- random image -->
+					<img src="Immagini/obama.jfif" id="immagine"> <!-- random image -->
 					<div class="caption center-align">
 					  <h3>OBAMA PRISM</h3>
 					  <h5 class="light grey-text text-lighten-3">SUS</h5>
@@ -98,7 +87,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="col s12">
-						<h3>Search Destinations</h3>
+						<h3>Search</h3>
+						<p>(completamente inutile ma è figo l'autocompletamento)</p>
 						<div class="input-field">
 							<input type="text" class="white grey-text autocomplete"
 							id="autocomplete-input" placeholder="Cane, procione, Obama...">
@@ -106,9 +96,75 @@
 					</div>
 				</div>
 			</div>
-
 		</section>
 
+		<section class="section section-icons grey lighten-4 center">
+			<div class="container">
+				<div class="row">
+					<div class="col 12 m4">
+						<div class="card-panel">
+							<i class="material-icons large teal-text">accessible</i>
+							<h4>Thomas</h4>
+							<p>Sdorgnak</p>
+						</div>
+					</div>
+					<div class="col 12 m4">
+						<div class="card-panel">
+							<i class="material-icons large teal-text">room</i>
+							<h4>Pick Where</h4>
+							<p>Lorem sburripsum</p>
+						</div>
+					</div>
+					<div class="col 12 m4">
+						<div class="card-panel">
+							<i class="material-icons large teal-text">attach_money</i>
+							<h4>Pick Where</h4>
+							<p>Lorem sburripsum</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="popular" class="section section-popular scrollspy">
+			<div class="container">
+				<div class="row">
+					<h4 class="center"><span class="teal-text">Cose belle</h4>
+					<div class="col s12 m4">
+						<div class="card">
+							<div class="card-image">
+								<img src="Immagini/dog.jfif" alt="">
+								<span class="card-title black-text">OOMOM</span>
+							</div>
+							<div class="card-content">Ah, boh non saprei</div>
+						</div>
+					</div>
+					<div class="col s12 m4">
+						<div class="card">
+							<div class="card-image">
+								<img src="Immagini/tondino.jfif" alt="">
+								<span class="card-title black-text">Bait per Filippo</span>
+							</div>
+							<div class="card-content">Ogni giorno Filippo si sveglia e sa che dovrà chiudere gli occhi prima di ricevere un tondino atomico</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-follow teal darken-2 white-text center">
+			<div class="container">
+				<div class="row">
+					<div class="col s12">
+						<h4>Join ITS Volta!</h4>
+						<p>Iscriviti anche tu! Not sponsored :c</p>
+						<a href="https://www.itsvolta.it/" class="white-text">
+							<i class="material-icons large teal-text">sentiment_very_satisfied</i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
 
       <!--JavaScript at end of body for optimized loading-->
       <script type="text/javascript" src="js/materialize.min.js"></script>
@@ -132,9 +188,11 @@
 				"Cane": null,
 				"Cammello": null,
 				"Carciofo": null,
-				"Sborra": null,
 			}
 		});
+
+		const ss = document.querySelectorAll('.scrollspy');
+		M.ScrollSpy.init(ss, {});
 	  </script>
     </body>
   </html>
