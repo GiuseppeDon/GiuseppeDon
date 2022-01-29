@@ -4,3 +4,8 @@
     width: 90% !important;
     border: #f4f4f4 3px solid !important;
 }
+
+#immagine{
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
